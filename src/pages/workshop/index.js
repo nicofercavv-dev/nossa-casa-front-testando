@@ -18,7 +18,7 @@ export const WorkshopList = () => {
               <br/>
               <p> Nome: {user.name}</p>
               <br/>
-              <p> Descriçães: {user.description}</p>
+              <p> Descrições: {user.description}</p>
             </li>
         ))}
     </ul>
