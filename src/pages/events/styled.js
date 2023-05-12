@@ -1,9 +1,25 @@
 import styled from 'styled-components'
 
-const Home = styled.div`
-  background-color: white;
-  width: 100%;
+const EventsContainer = styled.div`
   height: 100vh;
+  background-color: azure;
+
+  nav {
+    background-color: antiquewhite;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    border: 1px solid black;
+  }
+
+  ol {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+  }
 
   main {
     background-color: blue;
@@ -19,46 +35,52 @@ const Home = styled.div`
       }
     }
 
-    .about {
-      background-color: beige;
-      height: 627px;
+    .search {
+      background-color: #C2D1D9;
+      height: 122px;
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
-      .content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
+      form > input {
+        height: 52px;
+        width: 780px;
+        border-radius: 26px;
+        border: none;
+        padding-left: 20px;
       }
     }
 
-    .galeria {
-      height: 1036px;
-      background-color: bisque;
+    .carrossel-eventos {
+      background-color: white;
+      height: 748px;
+      width: 100%;
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
+      gap: 20px;
 
-      h2 {
-        text-align: center;
-        font-size: 2.5rem;
+      .evento {
+        width: 25%;
+
+        p {
+          color: gray;
+          margin: 10px 0;
+        }
+
+        h3 {
+          margin-bottom: 20px;
+        }
+
+        button {
+          background-color: white;
+          width: 146px;
+          height: 40px;
+          border: 1px solid #424B5A;
+        }
       }
 
-      .painel {
-        height: 55%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px; 
-      }
-
-      button {
-        font-size: 1.6rem;
-        width: 220px;
-        height: 60px;
+      img {
+        width: 100%;
       }
     }
 
@@ -119,7 +141,6 @@ const Home = styled.div`
       }
     }
   }
-
 `
 
-export default Home
+export default EventsContainer

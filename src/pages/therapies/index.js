@@ -1,24 +1,12 @@
 import Therapies from './styled'
 import foto from './fot.png'
 import social from '../home/Black.png'
+import NavBar from '../../components/navbar/index'
 
-export const PageTherapies = () => {
+export const TherapiesPage = () => {
   return (
     <Therapies>
-         <nav>
-        <h2>Nossa Casa</h2>
-        <ol>
-          <li>Sobre</li>
-          <li>Arte e Cultura</li>
-          <li>Eventos</li>
-          <li>Terapias</li>
-          <li>Educação</li>
-          <li>Oficinas</li>
-          <li>Projetos</li>
-        </ol>
-        <button>Seja parceires</button>
-
-      </nav>
+      <NavBar />
       <main>
         <section className='carrossel'>
           <h1>TERAPIAS</h1>

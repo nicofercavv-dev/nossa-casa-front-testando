@@ -1,39 +1,49 @@
-import Home from './styled'
-import image from './Background.png'
-import foto from './fot.png'
-import social from './Black.png'
-import NavBar from '../../components/navbar'
+import React from 'react'
+import EventsContainer from './styled'
+import evimg from '../home/Background.png'
+import social from '../home/Black.png'
+import NavBar from '../../components/navbar/index'
 
-export const HomePage = () => {
+const EventsPage = () => {
   return (
-    <Home>
+    <EventsContainer>
       <NavBar />
       <main>
         <section className='carrossel'>
           <h1>EVENTOS</h1>
-        </section>
-        <section className='Search'>
-          <div className='content'>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis est eget mi condimentum, in dictum massa molestie. Vivamus mattis, mauris ac fringilla congue, massa nisi ultrices arcu, sit amet vestibulum turpis ipsum id enim. In sit amet nisi a tortor maximus egestas. Donec bibendum maximus leo. Aliquam volutpat ullamcorper mauris, sed vehicula leo vehicula ac. Aliquam erat volutpat. Quisque pulvinar diam ac velit imperdiet scelerisque in a eros.
-              </p>
-            </div>
-            <img src={image}/>
+          <div>
+            <h2>II Festa Preta</h2>
+            <p>
+              A Nossa Casa a convite da Subsecretaria de Igualdade Racial do Município de Guarulhos realizou a II FESTA PRETA na cidade.
+              Em comemoração ao dia 20 de Novembro - Consciência Negra!
+              O evento aconteceu no Parque Bosque Maia e mexeu com as estruturas culturais, pretas, periféricas e independentes da cidade.
+            </p>
           </div>
-          <button>SAIBA MAIS</button>
         </section>
-        <section className='galeria'>
-          <h2>Galeria de fotos</h2>
-          <div className='painel'>
-            <img src={foto} />
-            <img src={foto} />
-            <img src={foto} />
-            <img src={foto} />
-            <img src={foto} />
-            <img src={foto} />
+        <section className='search'>
+          <form>
+            <input type='text' placeholder='Buscar' />
+          </form>
+        </section>
+        <section className='carrossel-eventos'>
+          <div className='evento'>
+            <img src={evimg} />
+            <p>22 Oct 2018</p>
+            <h3>Impact Of Extrinsic Motivation On Intrinsic Motivation</h3>
+            <button>VER MAIS</button>
           </div>
-          <button>ver mais</button>
+          <div className='evento'>
+            <img src={evimg} />
+            <p>22 Oct 2018</p>
+            <h3>Impact Of Extrinsic Motivation On Intrinsic Motivation</h3>
+            <button>VER MAIS</button>
+          </div>
+          <div className='evento'>
+            <img src={evimg} />
+            <p>22 Oct 2018</p>
+            <h3>Impact Of Extrinsic Motivation On Intrinsic Motivation</h3>
+            <button>VER MAIS</button>
+          </div>
         </section>
         <section className='parceires'>
           <h2>Parceires</h2>
@@ -79,6 +89,8 @@ export const HomePage = () => {
           <p>©2018 - Form  |   All right reserved</p>
         </footer>
       </main>
-    </Home>
+    </EventsContainer>
   )
 }
+
+export default EventsPage
