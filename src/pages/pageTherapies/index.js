@@ -1,12 +1,11 @@
-import Home from './styled'
-import image from './Background.png'
+import Therapies from './styled'
 import foto from './fot.png'
-import social from './Black.png'
+import social from '../home/Black.png'
 
-export const HomePage = () => {
+export const PageTherapies = () => {
   return (
-    <Home>
-      <nav>
+    <Therapies>
+         <nav>
         <h2>Nossa Casa</h2>
         <ol>
           <li>Sobre</li>
@@ -22,33 +21,43 @@ export const HomePage = () => {
       </nav>
       <main>
         <section className='carrossel'>
-          <h1>EVENTOS</h1>
+          <h1>TERAPIAS</h1>
         </section>
-        <section className='Search'>
-          <div className='content'>
+
+        <section className='search'>
+          <div className='search-box'>
             <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis est eget mi condimentum, in dictum massa molestie. Vivamus mattis, mauris ac fringilla congue, massa nisi ultrices arcu, sit amet vestibulum turpis ipsum id enim. In sit amet nisi a tortor maximus egestas. Donec bibendum maximus leo. Aliquam volutpat ullamcorper mauris, sed vehicula leo vehicula ac. Aliquam erat volutpat. Quisque pulvinar diam ac velit imperdiet scelerisque in a eros.
-              </p>
+              <input type='text' placeholder='Busca' className='search-input'></input>
             </div>
-            <img src={image}/>
           </div>
-          <button>SAIBA MAIS</button>
         </section>
-        <section className='galeria'>
-          <h2>Galeria de fotos</h2>
-          <div className='painel'>
-            <img src={foto} />
-            <img src={foto} />
-            <img src={foto} />
-            <img src={foto} />
-            <img src={foto} />
-            <img src={foto} />
-          </div>
-          <button>ver mais</button>
-        </section>
-        <section className='parceires'>
-          <h2>Parceires</h2>
+
+      <section className='terapias'>
+        <h1>Terapias</h1>
+        <div >
+          <ul className='painel'>
+             <li >
+                <img src={foto} />
+                <p>Impact Of Extrinsic Motivation On Intrinsic Motivation</p>
+                <button>ver mais</button>
+             </li>
+
+             <li>
+                <img src={foto} />
+                <p>Impact Of Extrinsic Motivation On Intrinsic Motivation</p>
+                <button>ver mais</button>
+             </li>
+
+             <li>
+                <img src={foto} />
+                <p>Impact Of Extrinsic Motivation On Intrinsic Motivation</p>
+                <button>ver mais</button>
+             </li>
+         </ul>
+        </div>
+      </section>
+      <section className='parceires'>
+      <h2>Parceires</h2>
           <p>
             A Nossa Casa é uma Associação sem fins lucrativos, composta por profissionais, artistas e ativistas do Município de Guarulhos.
           </p>
@@ -90,7 +99,8 @@ export const HomePage = () => {
           </div>
           <p>©2018 - Form  |   All right reserved</p>
         </footer>
-      </main>
-    </Home>
+
+        </main>
+    </Therapies>
   )
 }
