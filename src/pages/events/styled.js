@@ -1,32 +1,15 @@
 import styled from 'styled-components'
 
 const EventsContainer = styled.div`
+  background-color: white;
+  width: 100%;
   height: 100vh;
-  background-color: azure;
-
-  nav {
-    background-color: antiquewhite;
-    height: 61px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    border: 1px solid black;
-  }
-
-  ol {
-    width: 65%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8em;
-  }
 
   main {
-    background-color: blue;
     height: 100vh;
     .carrossel{
       height: 652px;
-      background-color: grey;
+      background-color: #E9EEF1;
 
       h1 {
         padding-left: 140px;
@@ -51,7 +34,7 @@ const EventsContainer = styled.div`
     }
 
     .carrossel-eventos {
-      background-color: white;
+      background-color: #DADADA;
       height: 748px;
       width: 100%;
       display: flex;
@@ -123,7 +106,7 @@ const EventsContainer = styled.div`
     }
 
     footer {
-      background-color: darkgrey;
+      background-color: #DADADA;
       height: 155px;
       display: flex;
       flex-direction: column;

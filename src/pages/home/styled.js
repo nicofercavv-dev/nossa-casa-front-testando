@@ -6,11 +6,10 @@ const Home = styled.div`
   height: 100vh;
 
   main {
-    background-color: blue;
     height: 100vh;
     .carrossel{
       height: 652px;
-      background-color: grey;
+      background-color: #E9EEF1;
 
       h1 {
         padding-left: 140px;
@@ -20,22 +19,37 @@ const Home = styled.div`
     }
 
     .about {
-      background-color: beige;
+      background-color: #FFFFFF;
       height: 627px;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
       }
+      .content > div {
+        width: 80%;
+        margin: 0 auto;
+        h2 {
+          font-size: 26px;
+          margin-bottom: 30px;
+        }
+      }
+      button {
+        background-color: #424B5A;
+        color: #FFFFFF;
+        border: none;
+        width: 168px;
+        height: 40px;
+      }
     }
 
     .galeria {
       height: 1036px;
-      background-color: bisque;
+      background-color: #DADADA;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -56,7 +70,10 @@ const Home = styled.div`
       }
 
       button {
-        font-size: 1.6rem;
+        background-color: #424B5A;
+        color: #FFFFFF;
+        border: none;
+        font-size: 1.4rem;
         width: 220px;
         height: 60px;
       }
@@ -101,7 +118,7 @@ const Home = styled.div`
     }
 
     footer {
-      background-color: darkgrey;
+      background-color: #DADADA;
       height: 155px;
       display: flex;
       flex-direction: column;

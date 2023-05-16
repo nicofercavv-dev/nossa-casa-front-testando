@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const NavBarComponent = styled.nav`
-  background-color: antiquewhite;
+  background-color: #F2F5F7;
   height: 61px;
   display: flex;
   justify-content: space-between;
@@ -19,6 +19,14 @@ const NavBarComponent = styled.nav`
       color: black;
       text-decoration: none;
     }
+  }
+
+  button {
+    background-color: #F2F5F7;
+    width: 146px;
+    height: 40px;
+    border: 1px solid #424B5A;
+    border-radius: 3px;
   }
 `
 

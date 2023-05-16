@@ -2,7 +2,7 @@ import React from 'react'
 import EventsContainer from './styled'
 import evimg from '../home/Background.png'
 import social from '../home/Black.png'
-import NavBar from '../../components/navbar/index'
+import NavBar from '../../components/navbar'
 
 const EventsPage = () => {
   return (
@@ -11,14 +11,6 @@ const EventsPage = () => {
       <main>
         <section className='carrossel'>
           <h1>EVENTOS</h1>
-          <div>
-            <h2>II Festa Preta</h2>
-            <p>
-              A Nossa Casa a convite da Subsecretaria de Igualdade Racial do Município de Guarulhos realizou a II FESTA PRETA na cidade.
-              Em comemoração ao dia 20 de Novembro - Consciência Negra!
-              O evento aconteceu no Parque Bosque Maia e mexeu com as estruturas culturais, pretas, periféricas e independentes da cidade.
-            </p>
-          </div>
         </section>
         <section className='search'>
           <form>
