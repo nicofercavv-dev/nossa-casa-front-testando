@@ -2,6 +2,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { HomePage } from './pages/home/index'
 import { TherapiesPage } from './pages/therapies'
 import EventsPage from './pages/events'
+import { WorkshopList } from './pages/workshop'
 
 export const App = () => {
   return (
@@ -12,7 +13,7 @@ export const App = () => {
         <Route path="/therapies" element={<TherapiesPage/>} />
         <Route path="/artandculture" element={<TherapiesPage/>} />
         <Route path="/education" element={<TherapiesPage/>} />
-        <Route path="/workshops" element={<TherapiesPage/>} />
+        <Route path="/workshops" element={<WorkshopList/>} />
         <Route path="/projects" element={<TherapiesPage/>} />
       </Routes>
     </BrowserRouter>
