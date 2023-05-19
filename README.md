@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Environment variables
+
+These are the environment variables that this application needs to work in any environment.
+The values ​​that should be assigned to them will depend on the environments.
+
+For a **local** environment (your machine) an `.env` file must be created at the root of the project
+
+```bash
+URL_CMS=http://localhost:9000
+```

@@ -1,5 +1,6 @@
 import axios from 'axios'
+import env from 'react-dotenv'
 
 export const client = axios.create({
-  baseURL: 'http://localhost:9000'
+  baseURL: env.URL_BACKEND
 })
