@@ -1,13 +1,20 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
-import { ToDo } from './pages/todo/todo-page'
-import { WorkshopList } from './pages/workshop/index'
+import { HomePage } from './pages/home/index'
+import { TherapiesPage } from './pages/therapies'
+import EventsPage from './pages/events'
+import { WorkshopList } from './pages/workshop'
 
 export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ToDo />} exact />
+        <Route path="/" element={<HomePage />} exact />
+        <Route path="/events" element={<EventsPage/>} />
+        <Route path="/therapies" element={<TherapiesPage/>} />
+        <Route path="/artandculture" element={<TherapiesPage/>} />
+        <Route path="/education" element={<TherapiesPage/>} />
         <Route path="/workshops" element={<WorkshopList/>} />
+        <Route path="/projects" element={<TherapiesPage/>} />
       </Routes>
     </BrowserRouter>
   )
