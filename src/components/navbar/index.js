@@ -6,8 +6,10 @@ import logo from './logoMarca.png'
 const NavBar = () => {
   return (
     <NavBarComponent>
-       <img src={logo}/>
-     <div>
+     <div className='container-logo'>
+     <img src={logo}/>
+      </div>
+     <div className='redirecionamento'>
         <NavLink to={'/'}>Sobre</NavLink>
         <NavLink to={'/artandculture'}>Arte e Cultura</NavLink>
         <NavLink to={'/events'}>Eventos</NavLink>
