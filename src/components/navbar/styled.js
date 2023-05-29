@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
 const NavBarComponent = styled.nav`
-  background-color: #F2F5F7;
+  background-color: #F5BC4A;
   height: 61px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
-  border: 1px solid black;
+  padding: 0 80px;
+  
 
   div {
-    width: 65%;
+    width: 43%;
     display: flex;
     justify-content: space-between;
     font-size: 0.8em;
@@ -28,6 +28,15 @@ const NavBarComponent = styled.nav`
     border: 1px solid #424B5A;
     border-radius: 3px;
   }
-`
 
+ img{
+ max-height: 100%;
+ width: 6%;
+ display: flex; 
+ justify-content: space-between;
+ 
+
+ }
+
+`
 export default NavBarComponent
