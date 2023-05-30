@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const CarouselContainer = styled.div`
   height: 40%;
   width: 70%;
-  /* background-color: aliceblue; */
   margin: auto;
   display: flex;
   justify-content: center;
