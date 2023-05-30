@@ -9,6 +9,12 @@ export const CarouselContainer = styled.div`
   justify-content: center;
   gap: 60px;
 
+  .inner-carousel {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+  }
+
   .prev, .next {
     width: 30px;
     display: inline;
@@ -16,10 +22,10 @@ export const CarouselContainer = styled.div`
   }
 
   .imageContainer {
-    width: 60%;
+    width: 100%;
     height: 100%;
     display: flex;
-    overflow: hidden;
+    transition: ease 1s;
 
     .image {
       width: 100%;
