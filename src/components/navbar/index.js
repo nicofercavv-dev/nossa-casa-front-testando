@@ -18,7 +18,9 @@ const NavBar = () => {
         <NavLink to={'/workshops'}>Oficinas</NavLink>
         <NavLink to={'/projects'}>Projetos</NavLink>
       </div>
+      <a href='https://docs.google.com/forms/d/e/1FAIpQLSfsRwJx-7Wa5VIOSFaH3DAAoOr3iTJFQ27qBOj5aJ5dHTUk1Q/viewform'>
       <button>Seja parceire</button>
+      </a>
     </NavBarComponent>
   )
 }
