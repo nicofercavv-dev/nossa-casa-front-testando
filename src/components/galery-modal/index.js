@@ -2,20 +2,20 @@ import { ModalContainer } from './styled'
 import { useState } from 'react'
 import closeIcon from './close-icon.svg'
 
-const ModalGalery = () => {
-  const [toggleGalery, setToggleGalery] = useState(false)
+const ModalGallery = () => {
+  const [toggleGallery, setToggleGallery] = useState(false)
 
-  const toggleGaleryHandler = () => {
-    setToggleGalery(!toggleGalery)
+  const toggleGalleryHandler = () => {
+    setToggleGallery(!toggleGallery)
   }
 
   return <>
-    <button onClick={() => toggleGaleryHandler()}>Ver mais</button>
-    {toggleGalery &&
+    <button onClick={toggleGalleryHandler}>Ver mais</button>
+    {toggleGallery &&
       <ModalContainer>
-        <img className='exit' src={closeIcon} onClick={() => toggleGaleryHandler()}/>
+        <img className='exit' src={closeIcon} onClick={toggleGalleryHandler}/>
       </ModalContainer>}
   </>
 }
 
-export default ModalGalery
+export default ModalGallery
