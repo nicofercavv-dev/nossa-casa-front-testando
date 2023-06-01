@@ -57,7 +57,7 @@ const Home = styled.div`
 
       h2 {
         text-align: center;
-        font-size: 50px;
+        font-size: 3.125rem;
         color: #FFFFFF;
       }
 
