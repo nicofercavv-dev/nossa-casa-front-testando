@@ -3,6 +3,7 @@ import image from './Background.png'
 import foto from './fot.png'
 import NavBar from '../../components/navbar'
 import Footer from '../../components/footer'
+import ModalGallery from '../../components/galery-modal'
 
 export const HomePage = () => {
   return (
@@ -34,7 +35,7 @@ export const HomePage = () => {
             <img src={foto} />
             <img src={foto} />
           </div>
-          <button>Ver mais</button>
+          <ModalGallery />
         </section>
         <section className='parceires'>
           <h2>Parceires</h2>
