@@ -4,7 +4,6 @@ import NossaCasa from './nossa_casa_logo.png'
 import Whatsapp from './whatsapp_logo.png'
 import Twitter from './twitter_logo.png'
 import Facebook from './facebook_logo.png'
-import env from 'react-dotenv'
 
 const Footer = () => {
   return (
@@ -12,10 +11,10 @@ const Footer = () => {
     <footer>
       <img className='logo' src={NossaCasa}/>
       <div>
-      <a href={env.URL_WHATSAPP}><img src={Whatsapp}/></a>
+      <a href={'https://chat.whatsapp.com/BndMXO2VZY7CS04IiJ9An2'}><img src={Whatsapp}/></a>
       <img src={Twitter}/>
       <img src={Facebook}/>
-      <a href={env.URL_INSTAGRAM}><img src={Instagram}/></a>
+      <a href={'https://www.instagram.com/nossacasa_at/'}><img src={Instagram}/></a>
       </div>
       <p>©2018 - Form  |   All right reserved</p>
     </footer>
