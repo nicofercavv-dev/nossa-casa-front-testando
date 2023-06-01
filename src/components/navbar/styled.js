@@ -48,9 +48,11 @@ const NavBarComponent = styled.nav`
   }
 
   img {
-    width: 75px;
     height: 63px;
+    width: 65px;
+    left: 121px;
     border-radius: 250px;
+
   }
 
   @media (max-width: 768px) {
