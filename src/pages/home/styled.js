@@ -19,7 +19,7 @@ const Home = styled.div`
     }
 
     .about {
-      background-color: #FFFFFF;
+      background-color: #F5BC4A;
       height: 627px;
       display: flex;
       flex-direction: column;
@@ -28,22 +28,39 @@ const Home = styled.div`
       .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        /* gap: 10px; */
+        align-items: center;
       }
       .content > div {
-        width: 80%;
+        width: 95%;
+        padding-left: 50px;
         margin: 0 auto;
         h2 {
-          font-size: 26px;
+          font-size: 2rem;
           margin-bottom: 30px;
+        }
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 35px;
         }
       }
       button {
-        background-color: #424B5A;
-        color: #FFFFFF;
+        background: linear-gradient(180deg, #516B848F 0%, #FFFFFF 100%);
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.40);
+        border-radius: 3px;
+        color: #000000;
         border: none;
+        font-size: 0.75rem;
         width: 168px;
         height: 40px;
+        cursor: pointer;
+      }
+
+      .foto-nossa-casa {
+        width: 80%;
+        margin-left: 40px;
       }
     }
 
@@ -76,7 +93,7 @@ const Home = styled.div`
         border-radius: 3px;
         color: #000000;
         border: none;
-        font-size: 14px;
+        font-size: 0.75rem;
         width: 182px;
         height: 40px;
         cursor: pointer;

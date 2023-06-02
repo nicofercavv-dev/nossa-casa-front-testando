@@ -8,7 +8,7 @@ export const ModalContainer = styled.div`
   top: 0;
   z-index: 1;
   overflow: auto;
-  background-color: #516B84;
+  background-color: ${props => props.theme === 'about' ? '#F5BC4A' : '#516B84'};
 
   .exit {
     display: block;
@@ -17,5 +17,36 @@ export const ModalContainer = styled.div`
     margin-top: 5px;
     margin-bottom: 5px;
     cursor: pointer;
+  }
+
+  .about-title {
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+  }
+  .topic {
+    height: 100%;
+    width: 100%;
+    margin: 0 15px;
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 0.93rem;
+      text-align: justify;
+    }
   }
 `
