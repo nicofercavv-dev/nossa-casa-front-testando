@@ -1,8 +1,9 @@
 import Home from './styled'
 import image from './Background.png'
 import foto from './fot.png'
-import social from './Black.png'
 import NavBar from '../../components/navbar'
+import Footer from '../../components/footer'
+import ModalGallery from '../../components/galery-modal'
 
 export const HomePage = () => {
   return (
@@ -34,7 +35,7 @@ export const HomePage = () => {
             <img src={foto} />
             <img src={foto} />
           </div>
-          <button>Ver mais</button>
+          <ModalGallery />
         </section>
         <section className='parceires'>
           <h2>Parceires</h2>
@@ -68,17 +69,7 @@ export const HomePage = () => {
             </div>
           </div>
         </section>
-        <footer>
-          <h3>Nossa Casa</h3>
-          <div>
-            <img src={social}/>
-            <img src={social}/>
-            <img src={social}/>
-            <img src={social}/>
-            <img src={social}/>
-          </div>
-          <p>©2018 - Form  |   All right reserved</p>
-        </footer>
+        <Footer/>
       </main>
     </Home>
   )
