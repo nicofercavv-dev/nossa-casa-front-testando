@@ -19,7 +19,7 @@ const NavBar = () => {
         <NavLink to={'/workshops'}>Oficinas</NavLink>
       </div>
       <a href={linkParceiro}>
-        <button>Seja parceiro</button>
+        <button>Seja parceire</button>
       </a>
     </NavBarComponent>
   )
