@@ -55,7 +55,7 @@ const NavBarComponent = styled.nav`
 
   }
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     /* Estilos para telas menores que 768px */
     padding: 0 2%;
 
@@ -68,7 +68,7 @@ const NavBarComponent = styled.nav`
     }
   }
 
-  @media (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     /* Estilos para telas menores que 480px */
     padding: 0 1%;
 
