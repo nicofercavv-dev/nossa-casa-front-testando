@@ -1,17 +1,13 @@
 import { ModalContainer } from './styled'
 import { useState } from 'react'
 import closeIcon from './close-icon.svg'
+import { buttonTextByTypes } from '../../constants/constants'
 
 const ModalGallery = ({ type }) => {
   const [toggleGallery, setToggleGallery] = useState(false)
 
   const toggleGalleryHandler = () => {
     setToggleGallery(!toggleGallery)
-  }
-
-  const buttonTextByTypes = {
-    about: 'SAIBA MAIS',
-    gallery: 'VER MAIS'
   }
 
   return <>
