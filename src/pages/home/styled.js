@@ -24,12 +24,14 @@ const Home = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      box-sizing: border-box;
       align-items: center;
       .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
         /* gap: 10px; */
         align-items: center;
+        
       }
       .content > div {
         width: 95%;
@@ -63,7 +65,42 @@ const Home = styled.div`
         margin-left: 40px;
       }
     }
+    @media screen and (min-width: 320px) {
+    .about {
+      padding: 100px;
 
+      .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 600px;
+        margin-bottom: 20px;
+       
+
+      }
+
+      .content > div {
+  
+        h2 {
+       
+         
+        }
+
+        p {
+      
+        }
+      }
+      button {
+    
+      }
+
+      .foto-nossa-casa {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+      }
+    }
+  }
     .galeria {
       height: 1036px;
       background-color: #516B84;
@@ -137,7 +174,9 @@ const Home = styled.div`
         }
       }
     }
+
   }
+  
 
 `
 
