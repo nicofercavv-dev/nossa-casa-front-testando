@@ -49,4 +49,17 @@ export const ModalContainer = styled.div`
       text-align: justify;
     }
   }
+
+  @media (min-width: 320px) and (max-width: 700px) {
+      .content-container {
+          grid-template-columns: none !important;
+          grid-template-rows: none !important;
+        }
+
+        .about-title {
+          font-size: 1.8rem;
+          text-align: center;
+          margin-bottom: 60px;
+}
+      }
 `

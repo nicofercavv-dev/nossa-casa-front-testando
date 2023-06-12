@@ -35,10 +35,10 @@ const Home = styled.div`
       }
       .content > div {
         width: 95%;
-        padding-left: 50px;
+        /* padding-left: 50px; */
         margin: 0 auto;
         h2 {
-          font-size: 2rem;
+          font-size: 2.25rem;
           margin-bottom: 30px;
         }
 
@@ -60,47 +60,12 @@ const Home = styled.div`
         cursor: pointer;
       }
 
-      .foto-nossa-casa {
+      .foto img {
         width: 80%;
         margin-left: 40px;
       }
     }
-    @media screen and (min-width: 320px) {
-    .about {
-      padding: 100px;
-
-      .content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        max-width: 600px;
-        margin-bottom: 20px;
-       
-
-      }
-
-      .content > div {
-  
-        h2 {
-       
-         
-        }
-
-        p {
-      
-        }
-      }
-      button {
-    
-      }
-
-      .foto-nossa-casa {
-        max-width: 100%;
-        height: auto;
-        margin-top: 20px;
-      }
-    }
-  }
+   
     .galeria {
       height: 1036px;
       background-color: #516B84;
@@ -177,6 +142,59 @@ const Home = styled.div`
 
   }
   
+  @media (min-width: 320px) and (max-width: 700px)  {
+    main .about{
+      height:auto;
+      padding:10px;
+      align-items: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+
+    }
+    main .about .content {
+      display: grid;
+      grid-template-columns: none !important;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-left: 0px;
+
+      .content .text {
+  
+        h2 {
+         display:flex;
+         font-size: 1.9rem !important;
+         padding-top:10px !important;
+         text-align: justify;
+        }
+
+        p {
+          display:flex;
+         font-size:10px;
+         color:#516B84;
+         text-align: justify;
+      
+        }
+      }
+      
+      .foto{
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        position:relative;
+      }
+
+      .foto img{
+        margin:auto;
+        display:block;
+        width:100%;
+        padding: 15px;
+      }
+    }
+  }
 
 `
 
