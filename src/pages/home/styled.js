@@ -106,8 +106,8 @@ const Home = styled.div`
         gap: 20px;
 
         .perfil {
-          background-color: rgba(245, 188, 74, 1);
           width: 30%;
+         
 
           h3 {
           text-align: center;
@@ -115,18 +115,24 @@ const Home = styled.div`
 
           p {
             text-align: center;
-          }          
+          } 
+          div{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height: 60%;
+            margin-bottom:30px;
+          }
+          
+          
         }
       }
 
-      .foto{
-        background-color: white;
-          width: 25%;
-          height: 45%;
-          border-radius: 900%;
-          margin-left: 38%;
-
-      }
+      img{
+        width: 40%;
+        height: 100%;
+        border-radius: 80%;
+    }
       button{
         background: linear-gradient(180deg, #516B848F 0%, #FFFFFF 100%);
         box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.40);
