@@ -84,7 +84,7 @@ const Home = styled.div`
     }
 
     .parceires {
-      background-color: aliceblue;
+      background-color: rgba(245, 188, 74, 1);
       height: 697px;
       display: flex;
       flex-direction: column;
@@ -107,7 +107,7 @@ const Home = styled.div`
         gap: 20px;
 
         .perfil {
-          background-color: cadetblue;
+          background-color: rgba(245, 188, 74, 1);
           width: 30%;
 
           h3 {
