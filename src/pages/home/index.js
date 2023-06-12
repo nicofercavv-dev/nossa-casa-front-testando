@@ -21,7 +21,7 @@ export const HomePage = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis est eget mi condimentum, in dictum massa molestie. Vivamus mattis, mauris ac fringilla congue, massa nisi ultrices arcu, sit amet vestibulum turpis ipsum id enim. In sit amet nisi a tortor maximus egestas. Donec bibendum maximus leo. Aliquam volutpat ullamcorper mauris, sed vehicula leo vehicula ac. Aliquam erat volutpat. Quisque pulvinar diam ac velit imperdiet scelerisque in a eros.
               </p>
             </div>
-            <img src={image}/>
+            <img src={image} />
           </div>
           <button>SAIBA MAIS</button>
         </section>
@@ -69,7 +69,7 @@ export const HomePage = () => {
             </div>
           </div>
         </section>
-        <Footer/>
+        <Footer />
       </main>
     </Home>
   )
