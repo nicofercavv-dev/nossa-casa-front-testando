@@ -116,7 +116,7 @@ const Home = styled.div`
 
           p {
             text-align: center;
-          }
+          }          
         }
       }
     }
