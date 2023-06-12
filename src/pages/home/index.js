@@ -68,11 +68,9 @@ export const HomePage = () => {
               </p>
             </div>
           </div>
-<<<<<<< HEAD
-          <button>Sej Parceires</button>
-=======
-          <button>Seja Parceire</button>
->>>>>>> 632c3c1d39eb8ea6fc9616eb7dced052618ddb11
+          <div className='button'>
+            <button>Seja Parceire</button>
+          </div>
         </section>
         <Footer />
       </main>

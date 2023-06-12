@@ -70,7 +70,7 @@ const Home = styled.div`
         grid-row-gap: 10px; 
       }
 
-      button {
+      button{
         background: linear-gradient(180deg, #516B848F 0%, #FFFFFF 100%);
         box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.40);
         border-radius: 3px;
@@ -99,7 +99,6 @@ const Home = styled.div`
       p {
         margin-bottom: 40px;
       }
-
       .carrossel-perfis {
         height: 60%;
         display: flex;
@@ -118,6 +117,17 @@ const Home = styled.div`
             text-align: center;
           }          
         }
+      }
+      button{
+        background: linear-gradient(180deg, #516B848F 0%, #FFFFFF 100%);
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.40);
+        border-radius: 3px;
+        color: #000000;
+        border: none;
+        font-size: 14px;
+        width: 182px;
+        height: 40px;
+        cursor: pointer;
       }
     }
   }
