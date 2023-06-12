@@ -4,6 +4,7 @@ import foto from './fot.png'
 import NavBar from '../../components/navbar'
 import Footer from '../../components/footer'
 import ModalGallery from '../../components/galery-modal'
+const linkParceire = process.env.REACT_APP_LINK_PARCEIRO
 
 export const HomePage = () => {
   return (
@@ -68,9 +69,9 @@ export const HomePage = () => {
               </p>
             </div>
           </div>
-          <div className='button'>
+          <a href={linkParceire}>
             <button>Seja Parceire</button>
-          </div>
+          </a>
         </section>
         <Footer />
       </main>
