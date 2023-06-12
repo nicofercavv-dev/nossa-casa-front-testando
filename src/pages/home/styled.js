@@ -118,6 +118,15 @@ const Home = styled.div`
           }          
         }
       }
+
+      .foto{
+        background-color: white;
+          width: 25%;
+          height: 45%;
+          border-radius: 900%;
+          margin-left: 38%;
+
+      }
       button{
         background: linear-gradient(180deg, #516B848F 0%, #FFFFFF 100%);
         box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.40);

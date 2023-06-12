@@ -45,7 +45,7 @@ export const HomePage = () => {
           </p>
           <div className='carrossel-perfis'>
             <div className='perfil'>
-              <img />
+            <img className='foto' src={foto} />
               <h3>Fulano</h3>
               <p>CEO</p>
               <p>
@@ -53,7 +53,7 @@ export const HomePage = () => {
               </p>
             </div>
             <div className='perfil'>
-              <img />
+            <img className='foto' src={foto} />
               <h3>Fulano</h3>
               <p>CEO</p>
               <p>
@@ -61,7 +61,7 @@ export const HomePage = () => {
               </p>
             </div>
             <div className='perfil'>
-              <img />
+            <img className='foto' src={foto} />
               <h3>Fulano</h3>
               <p>CEO</p>
               <p>
