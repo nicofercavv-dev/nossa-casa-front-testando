@@ -50,8 +50,8 @@ export const ModalContainer = styled.div`
     }
   }
 
-
-  @media (min-width: 325px )    {
+  //IOS
+  @media only screen and (max-width: 300px )    {
     width: 53%;
     overflow: auto;
     .content-container {
@@ -86,8 +86,9 @@ export const ModalContainer = styled.div`
     }
   }
 
-  @media (min-width: 326px) and (max-width: 839px){
-    width: 53%;
+
+  @media screen and (max-width: 415px ){
+    width: 54.1%;
     overflow: auto;
     .content-container {
       height: 90%;
@@ -121,8 +122,9 @@ export const ModalContainer = styled.div`
     }
   }
 
-  @media (min-width: 840px) and (max-width: 1920px)  {
-    width: 100%;
+  //tablet
+  @media screen and (min-width: 840px) and (max-width: 1920px)  {
+    width: 90%;
     overflow: auto;
     .content-container {
       height: 90%;

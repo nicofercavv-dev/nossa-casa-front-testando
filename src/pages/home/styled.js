@@ -1,15 +1,18 @@
 import styled from 'styled-components'
 
 const Home = styled.div`
+
   background-color: white;
   width: 100%;
   height: 100vh;
 
   main {
+
     height: 100vh;
-    .carrossel{
+
+    .carrossel {
       height: 652px;
-      background-color: #E9EEF1;
+      background-color: #e9eef1;
 
       h1 {
         padding-left: 140px;
@@ -19,38 +22,47 @@ const Home = styled.div`
     }
 
     .about {
-      background-color: #F5BC4A;
+
+      background-color: #f5bc4a;
       height: 627px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       box-sizing: border-box;
       align-items: center;
+
       .content {
+
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* gap: 10px; */
         align-items: center;
-        
+
       }
       .content > div {
+
         width: 95%;
-        /* padding-left: 50px; */
-        margin: 0 auto;
+        margin: 0;
+
         h2 {
+
           font-size: 2.25rem;
           margin-bottom: 30px;
+
         }
 
         p {
+
           font-size: 1.4rem;
           font-weight: 500;
           line-height: 35px;
+
         }
       }
+
       button {
-        background: linear-gradient(180deg, #516B848F 0%, #FFFFFF 100%);
-        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.40);
+
+        background: linear-gradient(180deg, #516b848f 0%, #ffffff 100%);
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
         border-radius: 3px;
         color: #000000;
         border: none;
@@ -58,17 +70,20 @@ const Home = styled.div`
         width: 168px;
         height: 40px;
         cursor: pointer;
+
       }
 
       .foto img {
+
         width: 80%;
         margin-left: 40px;
+
       }
     }
-   
+
     .galeria {
       height: 1036px;
-      background-color: #516B84;
+      background-color: #516b84;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -77,7 +92,7 @@ const Home = styled.div`
       h2 {
         text-align: center;
         font-size: 3.125rem;
-        color: #FFFFFF;
+        color: #ffffff;
       }
 
       .painel {
@@ -86,12 +101,12 @@ const Home = styled.div`
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 10px;
-        grid-row-gap: 10px; 
+        grid-row-gap: 10px;
       }
 
       button {
-        background: linear-gradient(180deg, #516B848F 0%, #FFFFFF 100%);
-        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.40);
+        background: linear-gradient(180deg, #516b848f 0%, #ffffff 100%);
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
         border-radius: 3px;
         color: #000000;
         border: none;
@@ -130,7 +145,7 @@ const Home = styled.div`
           width: 30%;
 
           h3 {
-          text-align: center;
+            text-align: center;
           }
 
           p {
@@ -139,17 +154,15 @@ const Home = styled.div`
         }
       }
     }
-
   }
-  
-  @media (min-width: 320px) and (max-width: 700px)  {
-    main .about{
-      height:auto;
-      padding:10px;
+
+  @media (min-width: 320px) and (max-width: 700px) {
+    main .about {
+      height: auto;
+      padding: 10px;
       align-items: center;
       -webkit-align-items: center;
       -webkit-box-align: center;
-
     }
     main .about .content {
       display: grid;
@@ -161,41 +174,38 @@ const Home = styled.div`
       padding-left: 0px;
 
       .content .text {
-  
         h2 {
-         display:flex;
-         font-size: 1.9rem !important;
-         padding-top:10px !important;
-         text-align: justify;
+          display: flex;
+          font-size: 1.9rem !important;
+          padding-top: 10px !important;
+          text-align: justify;
         }
 
         p {
-          display:flex;
-         font-size:10px;
-         color:#516B84;
-         text-align: justify;
-      
+          display: flex;
+          font-size: 10px;
+          color: #516b84;
+          text-align: justify;
         }
       }
-      
-      .foto{
+
+      .foto {
         max-width: 100%;
         height: auto;
         align-items: center;
         -webkit-align-items: center;
         -webkit-box-align: center;
-        position:relative;
+        position: relative;
       }
 
-      .foto img{
-        margin:auto;
-        display:block;
-        width:100%;
+      .foto img {
+        margin: auto;
+        display: block;
+        width: 100%;
         padding: 15px;
       }
     }
   }
-
 `
 
 export default Home
