@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
 export const ModalContainer = styled.div`
-   width: 100%;  
+  width: 100%;
   height: 100%;
+  max-width:auto;
+  max-height:auto;
   position: fixed;
   left: 0;
   top: 0;
@@ -10,7 +12,7 @@ export const ModalContainer = styled.div`
   /* overflow: auto; */
   background-color: ${props => props.theme === 'about' ? '#F5BC4A' : '#516B84'};
 
-  .exit {
+   .exit {
     display: block;
     width: 73px;
     margin-left: 90%;
@@ -48,11 +50,50 @@ export const ModalContainer = styled.div`
       font-size: 1rem;
       text-align: justify;
     }
+  } 
+
+ 
+//IOS
+  @media (max-width: 820px) {
+    .content-container {
+      height: 90%;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-row-gap: 20px;
+      grid-column-gap: 20px;
+    }
+
+    .about-title {
+      width: 48%;
+      font-size: 1.9rem;
+      margin-bottom: 10%;
+    }
+
+    .exit {
+      margin-left: 46%;
+    }
+
+    .topic {
+       width: 48%;
+      /* width: 25%; */
+      margin: 0 -20px;
+
+      h3 {
+         width: 50%; 
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+      }
+
+      p {
+          /* width: auto; */
+        font-size: 1rem;
+      }
+    }
   }
 
-  //IOS
-  @media only screen and (max-width: 300px )    {
-    width: 53%;
+
+   /* @media screen and (max-width: 415px ){
+    width: 100%;
     overflow: auto;
     .content-container {
       height: 90%;
@@ -84,46 +125,10 @@ export const ModalContainer = styled.div`
         font-size: 1rem;
       }
     }
-  }
-
-
-  @media screen and (max-width: 415px ){
-    width: 54.1%;
-    overflow: auto;
-    .content-container {
-      height: 90%;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-row-gap: 20px;
-      grid-column-gap: 20px;
-    }
-
-    .about-title {
-      font-size: 1.9rem;
-      margin-bottom: 40px;
-    }
-
-    .exit {
-      width: 50px;
-      margin-left: 85%;
-    }
-
-    .topic {
-      margin: 0 0px;
-
-      h3 {
-        font-size: 1.4rem;
-        margin-bottom: 8px;
-      }
-
-      p {
-        font-size: 1rem;
-      }
-    }
-  }
+  }  */
 
   //tablet
-  @media screen and (min-width: 840px) and (max-width: 1920px)  {
+   /* @media screen and (min-width: 840px) and (max-width: 1920px)  {
     width: 90%;
     overflow: auto;
     .content-container {
@@ -155,5 +160,5 @@ export const ModalContainer = styled.div`
         font-size: 1rem;
       }
     }
-  }
-`
+  } */
+  `
