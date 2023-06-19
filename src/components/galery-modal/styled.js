@@ -26,6 +26,10 @@ export const ModalContainer = styled.div`
     text-align: center;
     margin-bottom: 60px;
   }
+  body {
+    overflow-x: hidden;
+}
+
   .content-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,6 +66,7 @@ export const ModalContainer = styled.div`
       grid-row-gap: 20px;
       grid-column-gap: 20px;
     }
+    
 
     .about-title {
       width: 48%;
@@ -70,11 +75,11 @@ export const ModalContainer = styled.div`
     }
 
     .exit {
-      margin-left: 46%;
+      margin-left: 55%;
     }
 
     .topic {
-       width: 48%;
+       width: 78%;
       /* width: 25%; */
       margin: 0 -20px;
 
@@ -128,37 +133,43 @@ export const ModalContainer = styled.div`
   }  */
 
   //tablet
-   /* @media screen and (min-width: 840px) and (max-width: 1920px)  {
-    width: 90%;
-    overflow: auto;
-    .content-container {
+    @media screen and (min-width: 840px)  {
+      .content-container {
       height: 90%;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
-      grid-row-gap: 30px;
-      grid-column-gap: 50px;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+      margin: 0 0 20px;
+      padding: 30px;
     }
+    
 
     .about-title {
-      margin-bottom: 40px;
+      width: 38%;
+      font-size: 1.9rem;
+      margin: 0;
+      padding: 0;
     }
 
     .exit {
-      width: 73px;
-      margin-left: 90%;
+      margin-left: 55%;
     }
 
     .topic {
-      margin: 0 0px;
+       width: 68%;
+      /* width: 25%; */
+      margin: 0 -20px;
 
-      h3 {
-        font-size: 1rem;
-        margin-bottom: 10px;
+      h3 { 
+        font-size: 1.3rem;
+        margin-bottom: 0px;
       }
 
       p {
+          /* width: auto; */
         font-size: 1rem;
       }
     }
-  } */
+  }
   `
