@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import NavBarComponent from './styled'
 import logo from './logoMarca.png'
-const linkParceiro = process.env.REACT_APP_LINK_PARCEIRO
+const linkParceiro = process.env.REACT_APP_LINK_PARCEIRE
 
 const NavBar = () => {
   return (

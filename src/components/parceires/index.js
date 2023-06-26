@@ -64,8 +64,8 @@ const Parceires = () => {
             </div>
           </div>
         </div>
-        <a href={linkParceire}>
-          <button>Seja Parceire</button>
+        <a target='_blank' className='button-parceire' href={linkParceire} rel="noreferrer" >
+          Ser parceire
         </a>
       </section>
     </ParceireComponents>

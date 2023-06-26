@@ -50,7 +50,7 @@ const ParceireComponents = styled.section`
       }        
     } 
   }
-  button{
+  .button-parceire{
     background: #516B84;
     border-radius: 3px;
     color: white;
@@ -59,6 +59,10 @@ const ParceireComponents = styled.section`
     width: 182px;
     height: 40px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
   }
 }
 `
