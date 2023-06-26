@@ -82,54 +82,6 @@ const Home = styled.div`
         cursor: pointer;
       }
     }
-
-    .parceires {
-      background-color: rgba(245, 188, 74, 1);
-      height: 697px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      h2 {
-        font-size: 2.5rem;
-        margin-top: 30px;
-        margin-bottom: 10px;
-      }
-
-      p {
-        margin-bottom: 40px;
-      }
-      .carrossel-perfis {
-        height: 60%;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-
-        .perfil {
-          background-color: rgba(245, 188, 74, 1);
-          width: 30%;
-
-          h3 {
-          text-align: center;
-          }
-
-          p {
-            text-align: center;
-          }          
-        }
-      }
-      button{
-        background: linear-gradient(180deg, #516B848F 0%, #FFFFFF 100%);
-        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.40);
-        border-radius: 3px;
-        color: #000000;
-        border: none;
-        font-size: 14px;
-        width: 182px;
-        height: 40px;
-        cursor: pointer;
-      }
-    }
   }
 
 `
