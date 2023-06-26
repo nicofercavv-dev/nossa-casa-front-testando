@@ -51,10 +51,9 @@ const ParceireComponents = styled.section`
     } 
   }
   button{
-    background: linear-gradient(180deg, #516B848F 0%, #FFFFFF 100%);
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.40);
+    background: #516B84;
     border-radius: 3px;
-    color: #000000;
+    color: white;
     border: none;
     font-size: 14px;
     width: 182px;
