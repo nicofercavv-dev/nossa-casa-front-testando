@@ -26,11 +26,11 @@ const ParceireComponents = styled.section`
     .perfil {
       width: 30%;
 
-      img {
+      .img-perfil {
         width: 45%;
         height: 40%;
-        border-radius: 80%;
         margin-bottom: 20px;
+        border-radius: 80%;
       }
       h3 {
       text-align: center;
@@ -45,8 +45,12 @@ const ParceireComponents = styled.section`
         justify-content: center;
         align-items:center;
       }
-      icones-rede-sociais{
+      icones-rede-sociais, a{
+        display: flex;
         justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 20px;
       }        
     } 
   }

@@ -17,7 +17,7 @@ const Parceires = () => {
         <div className='carrossel-perfis'>
           <div className='perfil'>
             <div>
-              <img src={foto} />
+              <img className='img-perfil' src={foto} />
             </div>
             <h3>Fulano</h3>
             <p>CEO</p>
@@ -33,7 +33,7 @@ const Parceires = () => {
           </div>
           <div className='perfil'>
             <div>
-              <img src={foto} />
+              <img className='img-perfil' src={foto} />
             </div>
             <h3>Fulano</h3>
             <p>CEO</p>
@@ -49,7 +49,7 @@ const Parceires = () => {
           </div>
           <div className='perfil'>
             <div>
-              <img src={foto} />
+              <img className='img-perfil' src={foto} />
             </div>
             <h3>Fulano</h3>
             <p>CEO</p>
