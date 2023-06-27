@@ -24,8 +24,9 @@ export const ModalContainer = styled.div`
   .about-title {
     color:#54636E;
     font-size: 2.25rem;
-    text-align: center;
+    text-align: left;
     margin-bottom: 90px;
+    margin-left:0px;
   }
   body {
     overflow-x: hidden;
@@ -34,7 +35,7 @@ export const ModalContainer = styled.div`
   .content-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
     height: 70%;
     width: 90%;
     margin: auto;
@@ -75,6 +76,7 @@ export const ModalContainer = styled.div`
       /* top: 50px; */
      
       align-items: center;
+
       width: 38%;
       font-size: 1.9rem;
       margin-bottom: 5%;
@@ -104,23 +106,10 @@ export const ModalContainer = styled.div`
 
 
   //tablet
-@media screen and (min-width: 768px) and (max-width: 1536px)  {
-
-.content-container {
-text-align: left;
-width: 100%;
-height: 60%;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto;
-grid-row-gap: 35px;
-grid-column-gap: 25px;
-margin: 0 30px;
-padding: 10px;
-}
-
+/* @media screen and (min-width: 768px) and (max-width: 1536px)  {
 
 .about-title {
-width: 38%;
+width: 100%;
 font-size: 1.9rem;
 margin-bottom: 25px;
 padding: 0;
@@ -133,7 +122,7 @@ margin-left: 60%;
 .topic {
  width: 68%;
 /* width: 25%; */
-margin: 0 -25px;
+/* margin: 0 -25px;
 
 h3 { 
   font-size: 1.3rem;
@@ -146,41 +135,47 @@ p {
 }
 
 
-}
+} */ 
+
 @media screen and (min-width: 1280px) and (max-width: 1920px)  {
 
-.content-container .about-title {
-  
+.content-container   {
 text-align:justify;
-width: 60%;
-grid-template-columns: 1fr 1fr;
+ width: 90%; 
+grid-template-columns: 1fr 1fr ;
 grid-template-rows: auto;
 grid-row-gap: 85px;
-grid-column-gap: 85px;
+grid-column-gap: 20px;
 margin: 0 150px;
 padding: 10px;
+overflow: hidden;
 }
 
 
-.about-title {
-margin: 0 150px;
-width: 90%; 
-align-items: left;
+.about-title   {
+
+display: block;
+text-align: left;
+width: 38%;
+margin-left: 11.3rem;
 font-size: 1.9rem;
-margin-bottom: 60px; 
+margin-bottom:3%; 
 
 }
 
 .exit {
+  
 margin-left: 95%;
 }
 
 .topic {
-  width: 100%; 
+
+  width: 70%; 
 /* width: 25%; */
 margin: 0 20px;
 
 h3 { 
+  
   font-size: 1.3rem;
   margin-bottom: 15px;
 }
@@ -189,6 +184,7 @@ p {
   /* text-align: left;  */
   font-size: 1rem;
   line-height:1;
+  
 }
 }
 
