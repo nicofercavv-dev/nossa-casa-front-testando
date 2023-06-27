@@ -23,7 +23,7 @@ const Home = styled.div`
 
     .about {
 
-      background-color: #f5bc4a;
+      background-color: #ffffff;
       height: 627px;
       display: flex;
       flex-direction: column;
@@ -51,7 +51,6 @@ const Home = styled.div`
         }
 
         p {
-
           font-size: 1.4rem;
           font-weight: 500;
           line-height: 35px;
@@ -61,24 +60,25 @@ const Home = styled.div`
 
       button {
 
-        background: linear-gradient(180deg, #516b848f 0%, #ffffff 100%);
+        background: #F5BC4A;
         box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
         border-radius: 3px;
         color: #000000;
         border: none;
         font-size: 0.75rem;
-        width: 168px;
-        height: 40px;
+        width: 163px;
+        height: 56px;
+        font-weight: 600;
         cursor: pointer;
-
+        
       }
-
+ 
       .foto img {
 
         width: 80%;
         margin-left: 40px;
 
-      }
+      } 
     }
 
     .galeria {
@@ -92,7 +92,7 @@ const Home = styled.div`
       h2 {
         text-align: center;
         font-size: 3.125rem;
-        color: #ffffff;
+        color: #516B84;
       }
 
       .painel {
@@ -114,6 +114,7 @@ const Home = styled.div`
         width: 182px;
         height: 40px;
         cursor: pointer;
+        
       }
     }
 
@@ -156,13 +157,19 @@ const Home = styled.div`
     }
   }
 
-  @media (min-width: 320px) and (max-width: 700px) {
+ 
+  
+
+  @media (max-width: 700px) {
     main .about {
       height: auto;
       padding: 10px;
       align-items: center;
       -webkit-align-items: center;
       -webkit-box-align: center;
+    }
+    button{
+      margin-left: -55%;
     }
     main .about .content {
       display: grid;
@@ -172,20 +179,26 @@ const Home = styled.div`
       -ms-flex-align: center;
       align-items: center;
       padding-left: 0px;
+      
+      h2{
+        color: #516B84;
+      }
 
+      p{
+        color: #54636F
+      }
       .content .text {
         h2 {
           display: flex;
           font-size: 1.9rem !important;
           padding-top: 10px !important;
           text-align: justify;
+         
         }
 
         p {
           display: flex;
           font-size: 10px;
-          color: #516b84;
-          text-align: justify;
         }
       }
 
@@ -206,6 +219,57 @@ const Home = styled.div`
       }
     }
   }
+
+  
+  @media screen and (min-width: 720px ) and (max-width:1920px) {
+    main .about {
+      height: auto;
+      padding: 10px;
+      align-items: center;
+    }
+
+    button{
+      margin: auto;
+    }
+
+    main .about .content {
+      display: flex;
+      width: 55%;
+      margin: auto;
+      flex-direction: column;
+      justify-content: center;
+      
+      h2 { 
+    
+          font-size: 1.9rem ;
+          padding-top: 10px ;
+          color: #516B84;
+        }
+     p{
+      
+      font-size: 10px;
+      color: #54636F;
+     }
+     
+
+      .foto {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        grid-column-start: 20px;
+         align-items: center;
+
+      }
+
+      .foto img {
+        display: block;
+         max-width: 100%; 
+        padding: 15px;
+        margin: auto;
+      }
+    }
+  }
+
 `
 
 export default Home

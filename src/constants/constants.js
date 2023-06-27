@@ -1,5 +1,5 @@
 
 export const buttonTextByTypes = {
-  about: 'SAIBA MAIS',
+  about: 'Ver Mais',
   gallery: 'VER MAIS'
 }

@@ -11,7 +11,7 @@ export const ModalContainer = styled.div`
   z-index: 1;
   /* overflow: auto; */
   background-color: ${props => props.theme === 'about' ? '#F5BC4A' : '#516B84'};
-
+                                                          
    .exit {
     display: block;
     width: 73px;
@@ -24,7 +24,7 @@ export const ModalContainer = styled.div`
   .about-title {
     font-size: 2.25rem;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 90px;
   }
   body {
     overflow-x: hidden;
@@ -58,112 +58,38 @@ export const ModalContainer = styled.div`
 
  
 //IOS
-  @media (max-width: 820px) {
+  @media (max-width: 720px) {
     .content-container {
-      height: 90%;
+       height: 90%; 
       grid-template-columns: 1fr;
       grid-template-rows: auto;
-      grid-row-gap: 20px;
+      grid-row-gap: 25px;
       grid-column-gap: 20px;
     }
     
 
     .about-title {
-      width: 48%;
-      font-size: 1.9rem;
-      margin-bottom: 10%;
-    }
-
-    .exit {
-      margin-left: 55%;
-    }
-
-    .topic {
-       width: 78%;
-      /* width: 25%; */
-      margin: 0 -20px;
-
-      h3 {
-         width: 50%; 
-        font-size: 1.3rem;
-        margin-bottom: 8px;
-      }
-
-      p {
-          /* width: auto; */
-        font-size: 1rem;
-      }
-    }
-  }
-
-
-   /* @media screen and (max-width: 415px ){
-    width: 100%;
-    overflow: auto;
-    .content-container {
-      height: 90%;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-row-gap: 20px;
-      grid-column-gap: 20px;
-    }
-
-    .about-title {
-      font-size: 1.9rem;
-      margin-bottom: 40px;
-    }
-
-    .exit {
-      width: 50px;
-      margin-left: 85%;
-    }
-
-    .topic {
-      margin: 0 0px;
-
-      h3 {
-        font-size: 1.4rem;
-        margin-bottom: 8px;
-      }
-
-      p {
-        font-size: 1rem;
-      }
-    }
-  }  */
-
-  //tablet
-    @media screen and (min-width: 840px)  {
-      .content-container {
-      height: 90%;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      grid-row-gap: 10px;
-      grid-column-gap: 10px;
-      margin: 0 0 20px;
-      padding: 30px;
-    }
-    
-
-    .about-title {
+      /* top: 50px; */
+     
+      align-items: center;
       width: 38%;
       font-size: 1.9rem;
-      margin: 0;
-      padding: 0;
+      margin-bottom: 5%;
     }
 
     .exit {
-      margin-left: 55%;
+      margin-left: 40%;
     }
 
     .topic {
-       width: 68%;
+       width: 48%;
       /* width: 25%; */
-      margin: 0 -20px;
+      margin: 0 -30px;
 
-      h3 { 
+      h3 {
+         width: 70%; 
         font-size: 1.3rem;
-        margin-bottom: 0px;
+        margin-bottom: 8px;
       }
 
       p {
@@ -172,4 +98,93 @@ export const ModalContainer = styled.div`
       }
     }
   }
+
+
+  //tablet
+@media screen and (min-width: 768px) and (max-width: 1536px)  {
+
+.content-container {
+text-align: left;
+width: 80%;
+height: 60%;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-row-gap: 35px;
+grid-column-gap: 25px;
+margin: 0 30px;
+padding: 10px;
+}
+
+
+.about-title {
+width: 38%;
+font-size: 1.9rem;
+margin-bottom: 25px;
+padding: 0;
+}
+
+.exit {
+margin-left: 60%;
+}
+
+.topic {
+ width: 68%;
+/* width: 25%; */
+margin: 0 -25px;
+
+h3 { 
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+}
+}
+
+
+}
+@media screen and (min-width: 1280px) and (max-width: 2560px)  {
+
+.content-container {
+width: 80%;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-row-gap: 85px;
+grid-column-gap: 85px;
+margin: 0 150px;
+padding: 10px;
+}
+
+
+.about-title {
+ width: 90%; 
+align-items: center;
+font-size: 1.9rem;
+margin-bottom: 60px; 
+
+}
+
+.exit {
+margin-left: 95%;
+}
+
+.topic {
+  width: 100%; 
+/* width: 25%; */
+margin: 0 20px;
+
+h3 { 
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+p {
+  /* text-align: left;  */
+  font-size: 1rem;
+}
+}
+
+
+}
   `
