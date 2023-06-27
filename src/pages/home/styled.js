@@ -234,10 +234,9 @@ const Home = styled.div`
 
     main .about .content {
       display: flex;
-      width: 55%;
-      margin: auto;
-      flex-direction: column;
-      justify-content: center;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
       
       h2 { 
     

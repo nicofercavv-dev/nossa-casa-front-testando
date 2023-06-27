@@ -10,7 +10,7 @@ export const ModalContainer = styled.div`
   top: 0;
   z-index: 1;
   /* overflow: auto; */
-  background-color: ${props => props.theme === 'about' ? '#F5BC4A' : '#516B84'};
+  background-color: ${props => props.theme === 'about' ? '#FFFFFF' : '#516B84'};
                                                           
    .exit {
     display: block;
@@ -22,6 +22,7 @@ export const ModalContainer = styled.div`
   }
 
   .about-title {
+    color:#54636E;
     font-size: 2.25rem;
     text-align: center;
     margin-bottom: 90px;
@@ -46,11 +47,13 @@ export const ModalContainer = styled.div`
     margin: 0 0px;;
 
     h3 {
+      color:#54636E;
       font-size: 1rem;
       margin-bottom: 10px;
     }
 
     p {
+      color:#54636E;
       font-size: 1rem;
       text-align: justify;
     }
@@ -105,7 +108,7 @@ export const ModalContainer = styled.div`
 
 .content-container {
 text-align: left;
-width: 80%;
+width: 100%;
 height: 60%;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
@@ -144,10 +147,12 @@ p {
 
 
 }
-@media screen and (min-width: 1280px) and (max-width: 2560px)  {
+@media screen and (min-width: 1280px) and (max-width: 1920px)  {
 
-.content-container {
-width: 80%;
+.content-container .about-title {
+  
+text-align:justify;
+width: 60%;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-row-gap: 85px;
@@ -158,8 +163,9 @@ padding: 10px;
 
 
 .about-title {
- width: 90%; 
-align-items: center;
+margin: 0 150px;
+width: 90%; 
+align-items: left;
 font-size: 1.9rem;
 margin-bottom: 60px; 
 
@@ -182,6 +188,7 @@ h3 {
 p {
   /* text-align: left;  */
   font-size: 1rem;
+  line-height:1;
 }
 }
 
