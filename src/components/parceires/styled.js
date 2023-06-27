@@ -17,13 +17,13 @@ const ParceireComponents = styled.section`
   p {
     margin-bottom: 40px;
   }
-  .carrossel-perfis {
+  .parceires {
     height: 60%;
     display: flex;
     justify-content: center;
     gap: 20px;
 
-    .perfil {
+    .swiper-slide {
       width: 30%;
 
       .img-perfil{
@@ -34,7 +34,7 @@ const ParceireComponents = styled.section`
       }
       h3 {
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 40px;
       }
 
       p {
@@ -54,20 +54,32 @@ const ParceireComponents = styled.section`
       }       
     } 
   }
-  .button-parceire{
-    background: #516B84;
-    border-radius: 3px;
-    color: white;
-    border: none;
-    font-size: 14px;
-    width: 182px;
-    height: 40px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+  
+  @media (max-width: 760px) {
+    .swiper-button-next {
+      right: 20px;
+      transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+      left: 20px;
+      transform: rotate(90deg);
+    }
   }
+}
+.button-parceire{
+  background: #516B84;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  font-size: 14px;
+  width: 182px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 `
 export default ParceireComponents
