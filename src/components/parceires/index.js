@@ -152,6 +152,24 @@ const Parceires = () => {
                 </div>
               </div>
             </SwiperSlide>
+            <SwiperSlide>
+              <div className='perfil'>
+                <div>
+                  <img className='img-perfil' src={foto} />
+                </div>
+                <h3>Fulano</h3>
+                <p>CEO</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                </p>
+                <div className='icones-rede-sociais'>
+                  <a className='icones' href={'https://chat.whatsapp.com/BndMXO2VZY7CS04IiJ9An2'}><img src={Whatsapp} /></a>
+                  <a className='icones' href={'#'}><img src={Twitter} /></a>
+                  <a className='icones' href={'#'}><img src={Facebook} /></a>
+                  <a className='icones' href={'https://www.instagram.com/nossacasa_at/'}><img src={Instagram} /></a>
+                </div>
+              </div>
+            </SwiperSlide>
           </div>
         </section>
         <div className='button-parceire'>

@@ -17,8 +17,7 @@ const ParceireComponents = styled.section`
     justify-content: center;
     gap: 20px;
 
-     
-    } 
+  }
   }
 
   h2 {
@@ -94,7 +93,6 @@ const ParceireComponents = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
 }
 `
 export default ParceireComponents
