@@ -53,12 +53,13 @@ const ParceireComponents = styled.section`
         display: flex;
         justify-content: center;
         height: 20px;
-       
+        width: 20px;
+        margin-left: 10px;     
       }
     }     
       
 
-    .test{
+    .styled-button{
     display: flex;
      justify-content: center;
      padding:30px;
