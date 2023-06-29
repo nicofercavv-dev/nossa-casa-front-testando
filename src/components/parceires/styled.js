@@ -15,7 +15,7 @@ const ParceireComponents = styled.section`
     display:flex;
     justify-content: center;
     font-size: 2.5rem;
-    margin-top: 30px;
+    padding-top:20px;
     margin-bottom: 10px;
   }
   
