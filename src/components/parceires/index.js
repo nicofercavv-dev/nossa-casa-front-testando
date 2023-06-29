@@ -7,7 +7,7 @@ import ParceireComponents from './styled.js'
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
-import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 import { Navigation } from 'swiper'
 const linkParceire = process.env.REACT_APP_LINK_PARCEIRO
 
@@ -21,9 +21,7 @@ const Parceires = () => {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        navigation={{
-          clickable: true
-        }}
+        navigation={true}
         breakpoints={{
           '@0.00': {
             slidesPerView: 1,
