@@ -8,7 +8,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import { Pagination } from 'swiper'
+import { Navigation } from 'swiper'
 const linkParceire = process.env.REACT_APP_LINK_PARCEIRO
 
 const Parceires = () => {
@@ -21,7 +21,7 @@ const Parceires = () => {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        pagination={{
+        navigation={{
           clickable: true
         }}
         breakpoints={{
@@ -38,7 +38,7 @@ const Parceires = () => {
             spaceBetween: 40
           }
         }}
-        modules={[Pagination]}
+        modules={[Navigation]}
         className="mySwiper"
       >
 
@@ -163,21 +163,23 @@ const Parceires = () => {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
                 <div className='icones-rede-sociais'>
-                  <a className='icones' href={'https://chat.whatsapp.com/BndMXO2VZY7CS04IiJ9An2'}><img src={Whatsapp} /></a>
-                  <a className='icones' href={'#'}><img src={Twitter} /></a>
-                  <a className='icones' href={'#'}><img src={Facebook} /></a>
-                  <a className='icones' href={'https://www.instagram.com/nossacasa_at/'}><img src={Instagram} /></a>
+                  <a href={'https://chat.whatsapp.com/BndMXO2VZY7CS04IiJ9An2'}><img src={Whatsapp} /></a>
+                  <a href={'#'}><img src={Twitter} /></a>
+                  <a href={'#'}><img src={Facebook} /></a>
+                  <a href={'https://www.instagram.com/nossacasa_at/'}><img src={Instagram} /></a>
                 </div>
               </div>
             </SwiperSlide>
           </div>
         </section>
-        <div className='button-parceire'>
-        <a target='_blank' href={linkParceire} rel="noreferrer" className='buttoon-parceire'>
+      </Swiper>
+      <div className='test'>
+      <div className='button-parceire'>
+        <a target='_blank' href={linkParceire} rel="noreferrer">
           Ser parceire
         </a>
       </div>
-      </Swiper>
+      </div>
     </ParceireComponents >
   )
 }
