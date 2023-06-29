@@ -4,21 +4,12 @@ const ParceireComponents = styled.section`
 
 
 .parceires {
-  background-color: rgba(245, 188, 74, 1);
+  background-color: yellow;
   height: 697px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
-  .parceires {
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-
-  }
-  }
+}
 
   h2 {
     display:flex;
@@ -53,46 +44,57 @@ const ParceireComponents = styled.section`
     }
 
     
-    .icones-rede-sociais, .icones{
-      margin-left: 40%;
+    .icones-rede-sociais{
+      display:flex;
+      justify-content: center;
       border-radius: none;
-      width: 30px;
-      height: 20px;
+      
+      a{
+        display: flex;
+        justify-content: center;
+        height: 20px;
+       
+      }
     }     
       
 
-}
+    .test{
+    display: flex;
+     justify-content: center;
+     padding:30px;
 
+      .button-parceire{
+        background: #516B84;
+        border-radius: 3px;
+        border: none;
+        font-size: 14px;
+        width: 182px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        a{
+          text-decoration: none;
+          color: white;
+          display: flex;
+        justify-content: center;
+        }
+      }
+    }
 
+    @media (max-width: 760px) {
+      .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+      }
+  
+      .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+      }
+    }  
 
-
-.button-parceire{
-  font-color: white;
-  background: #516B84;
-  border-radius: 3px;
-  border: none;
-  font-size: 14px;
-  width: 182px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-.buttoon-parceire{
-  font-color:white;
-  background: #516B84;
-  border-radius: 3px;
-  border: none;
-  font-size: 14px;
-  width: 182px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 `
 export default ParceireComponents
