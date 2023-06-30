@@ -40,6 +40,7 @@ const ParceireComponents = styled.section`
     }
 
     p {
+      padding: 20px;
       text-align: center;
     }
 
