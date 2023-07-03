@@ -176,7 +176,7 @@ main .about .content {
     margin-bottom: 30px;
   }
 
-  .content p {
+  .content .Textparagraph {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 35px;
@@ -187,7 +187,7 @@ main .about .content {
     color: #516B84;
   }
 
-  .content .text p {
+  .content .text .Textparagraph {
     font-size: 25px;
     color: #54636F;
   }

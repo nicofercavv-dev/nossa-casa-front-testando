@@ -107,14 +107,14 @@ export const ModalContainer = styled.div`
 
 
 
-@media screen and (min-width: 1280px) and (max-width: 1920px)  {
+@media screen and (min-width: 780px) and (max-width: 2920px)  {
 
 .content-container   {
 text-align:justify;
- width: 90%; 
+ width: 100%; 
 grid-template-columns: 1fr 1fr ;
 grid-template-rows: auto;
-grid-row-gap: 85px;
+grid-row-gap: 55px;
 grid-column-gap: 20px;
 margin: 0 150px;
 padding: 10px;
