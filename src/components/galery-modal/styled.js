@@ -9,7 +9,7 @@ export const ModalContainer = styled.div`
   left: 0;
   top: 0;
   z-index: 1;
-  /* overflow: auto; */
+ 
   background-color: ${props => props.theme === 'about' ? '#FFFFFF' : '#516B84'};
                                                           
    .exit {
@@ -64,7 +64,7 @@ export const ModalContainer = styled.div`
 //IOS
   @media (max-width: 720px) {
     .content-container {
-       height: 90%; 
+      height: 90%; 
       grid-template-columns: 1fr;
       grid-template-rows: auto;
       grid-row-gap: 25px;
@@ -73,7 +73,7 @@ export const ModalContainer = styled.div`
     
 
     .about-title {
-      /* top: 50px; */
+      
      
       align-items: center;
 
@@ -88,7 +88,7 @@ export const ModalContainer = styled.div`
 
     .topic {
        width: 48%;
-      /* width: 25%; */
+     
       margin: 0 -30px;
 
       h3 {
@@ -98,44 +98,14 @@ export const ModalContainer = styled.div`
       }
 
       p {
-          /* width: auto; */
+        
         font-size: 1rem;
       }
     }
   }
 
 
-  //tablet
-/* @media screen and (min-width: 768px) and (max-width: 1536px)  {
 
-.about-title {
-width: 100%;
-font-size: 1.9rem;
-margin-bottom: 25px;
-padding: 0;
-}
-
-.exit {
-margin-left: 60%;
-}
-
-.topic {
- width: 68%;
-/* width: 25%; */
-/* margin: 0 -25px;
-
-h3 { 
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 1rem;
-}
-}
-
-
-} */ 
 
 @media screen and (min-width: 1280px) and (max-width: 1920px)  {
 
@@ -171,7 +141,7 @@ margin-left: 95%;
 .topic {
 
   width: 70%; 
-/* width: 25%; */
+
 margin: 0 20px;
 
 h3 { 
@@ -181,7 +151,7 @@ h3 {
 }
 
 p {
-  /* text-align: left;  */
+ 
   font-size: 1rem;
   line-height:1;
   

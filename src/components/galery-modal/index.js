@@ -11,7 +11,8 @@ const ModalGallery = ({ type }) => {
   }
 
   return <>
-    <button onClick={toggleGalleryHandler}>{buttonTextByTypes[type]}</button>
+       <button onClick={toggleGalleryHandler}>{buttonTextByTypes[type]}</button>
+
     {toggleGallery &&
       <ModalContainer theme={type}>
         <img className='exit' src={closeIcon} onClick={toggleGalleryHandler}/>
