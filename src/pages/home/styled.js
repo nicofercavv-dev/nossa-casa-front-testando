@@ -70,7 +70,7 @@ const Home = styled.div`
         grid-row-gap: 10px; 
       }
 
-      button {
+      button{
         background: linear-gradient(180deg, #516B848F 0%, #FFFFFF 100%);
         box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.40);
         border-radius: 3px;
@@ -80,44 +80,6 @@ const Home = styled.div`
         width: 182px;
         height: 40px;
         cursor: pointer;
-      }
-    }
-
-    .parceires {
-      background-color: aliceblue;
-      height: 697px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      h2 {
-        font-size: 2.5rem;
-        margin-top: 30px;
-        margin-bottom: 10px;
-      }
-
-      p {
-        margin-bottom: 40px;
-      }
-
-      .carrossel-perfis {
-        height: 60%;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-
-        .perfil {
-          background-color: cadetblue;
-          width: 30%;
-
-          h3 {
-          text-align: center;
-          }
-
-          p {
-            text-align: center;
-          }
-        }
       }
     }
   }
